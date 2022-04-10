@@ -16,9 +16,9 @@ jobs:
           name: hello
           command: |
             echo "hello-world"
-          name: install-front
+          install-front: install-front
           command: |
             cd reactnd-contacts-complete && npm install
-          name: install-back
+          install-back: install-back
           command: |
             cd reactnd-contacts-server && npm install
