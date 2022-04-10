@@ -20,3 +20,11 @@ jobs:
           name: install-back
           command: |
             cd reactnd-contacts-server && npm install
+      - run:
+          name: build-front
+          command: |
+            cd reactnd-contacts-complete && npm run build
+      - run:
+          name: build-back
+          command: |
+            cd reactnd-contacts-server && npm run build
