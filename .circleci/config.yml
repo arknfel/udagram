@@ -13,12 +13,10 @@ jobs:
       - checkout
       # install dependencies in both apps
       - run:
-          name: hello
-          command: |
-            echo "hello-world"
-          install-front: install-front
+          name: install-front
           command: |
             cd reactnd-contacts-complete && npm install
-          install-back: install-back
+      - run:
+          name: install-back
           command: |
             cd reactnd-contacts-server && npm install
