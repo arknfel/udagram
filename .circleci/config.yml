@@ -27,4 +27,4 @@ jobs:
       - run:
           name: build-back
           command: |
-            cd reactnd-contacts-server && npm run build
+            cd reactnd-contacts-server && npm i yarn && npm run build
